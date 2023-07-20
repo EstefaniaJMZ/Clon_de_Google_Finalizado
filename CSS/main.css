@@ -1,0 +1,406 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+header{
+    /*background-color: aqua;*/
+    width: 100%;
+    height: 60px;
+    border-color: #dfe1e500; 
+}
+   
+
+/* Es mejor usar porcentajes, pero es más accurate con pixeles*/
+
+header nav {
+    /* Justificar a la derecha*/
+    /*background-color: blue;*/
+    /*color*/
+    display: flex;
+    justify-content: flex-end;
+    /*justificar a la derecha*/
+
+}
+
+header nav .nav-right-section{
+    /*background-color: rgb(121, 121, 121);*/
+    width: 30px;
+    width: 100%;
+    align-items: left;
+    list-style: none;
+    /*Elimina los puntos de la lista*/
+    display: flex;
+    /*Propiedad flex- sea responsivo y flexible, que se pueda mover para todos lados*/
+    justify-content: right;
+    align-items: center;
+    /* centrado verticalmente */
+    height: auto;
+  
+}
+
+a{ 
+    text-decoration: none;
+    /*Remueve lineas de abajo*/
+    
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: rgb(0, 0, 0,.87);
+    
+}
+
+nav .nav-right-section .menu{
+    /*background-color: yellowgreen;*/
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    /* Pone la imagen al mayor tamaño posible, si estirar o recortar*/
+    background-repeat: no-repeat;
+    margin-right: -1.5%;
+}
+
+nav .nav-right-section img{
+width: 35px;
+height: 35px;
+margin-left: 20px;
+margin-right: 20px;
+border-radius: 30px;
+/* border-radius, esto es para que se redondee la imagen*/
+
+}
+
+/****************************************************************
+***************************************************************/
+/***************----BUSCADOR - MAIN---*******************/
+
+main {
+    margin-top: 100px;
+    text-align: center;
+   
+}
+
+main .main-logo{
+    
+    width: 530px;
+    margin: 0 auto;
+    /* 0- significa ni margen arriba y abajo
+    auto- izquierda y derecha se ajustan auto*/
+    margin-bottom: 35px;
+    /*este es para separar lo de arriba y abajo*/
+}
+/* aqui se pone primero main, porque es donde esta la clase, despues ya te metes a la
+clase para modificarla */
+
+main .main-logo img{
+    height: 120px;
+
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    /*Esta parte hizo que se centrara la cajita del input*/
+}
+
+main .main-input-container{
+    border: 2px solid #dfe1e5 ;
+    /* Este es para ponerle una linea dentro de la caja,
+    dice anchura, estilo y color de la linea*/
+    width: 525px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+main .main-input input{
+    border: none;
+    height: 40px;
+    outline: none;
+    width: 480px;
+    /*Esta es la caja dentro de la caja, lo que paso aqui es que se hizo más chica 
+    porque aparecian unas lineas feas de como cortaba la caja*/
+
+}
+/*Aqui se esta editando la cajita*/
+
+main .main-input-container:hover{
+    border-color: #dfe1e500;
+    box-shadow: 0px 1px 6px 0px #20212447;
+
+}
+/*Sirve el hoover para que el css lo reconozca y asi cambie acorde
+a las propiedades*/
+
+
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    background-size: contain;
+    height: 15px;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    /*La diferencia de padding y margin es que uno es un margen hacia afuera y otro hacia dentro.
+    En pocas palabras, el padding es el espacio que separa la imagen de su margen.
+    Un margem pa dentro, un borde dentro de otro borde, es crear un espacio entre los dos.
+    el pading es lo que centra lo que va a dentro de nuestra cajitaen una cajita invisible
+    El contenido es tu producto de Amazon, el padding las bolsas con aire que le ponen para 
+    que se compacte y no se mueva, la caja sería el border y los espacios que se dejan entre 
+    caja y caja en el camión de reparto es el margi */
+}
+/*TU AGREGA TODAS LAS PROPIEDADES QUE CONSIDERES PORQUE A VECES LO QUE FALTA PARA QUE AÑGO SE VEA ES AGREGAR
+UNA PROPIEDAD*/
+
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    background-color: #f8f9fa;
+    font-size: 18px;
+    color: #3c4043;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 15px;
+    /*margen interno*/
+    margin-right: 15px;
+    /*margen entre botones*/
+}
+
+main .main-buttons button:hover{
+    border-color: #dfe1e500;
+    box-shadow: 0px 2px 6px 0px #20212447;
+
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-position: right;
+    background-size: contain;
+    align-items: flex-start;
+    margin-right: 4%;
+    height: 19px;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: left;
+    background-size: contain;
+    align-items: flex-start;
+    margin-right: 1%;
+    height: 18px;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+   
+
+/*AGREGAR HOOVER PARA LA SIGUIENTE CLASE, tambien LOS ICONOS*/
+
+/*AGREGACO LO DE PIE DE PÁGINA Y LA CAGITA DE ABAJO*/
+
+/****************************************************************
+***************************************************************/
+/***************----FOOTER--pie de pagina---*******************/
+
+footer{
+    /*background-color: aqua;*/
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    border-color: #4c4c4c00;
+     
+    
+     
+}
+
+footer .pie-de-pagina1{
+    margin-top: 19.5%;
+    width: 100%;
+    list-style: none;
+    /*Elimina los puntos de la lista*/
+    display: flex;
+    /*Propiedad flex- sea responsivo y flexible, que se pueda mover para todos lados*/
+    justify-content: left;
+    align-items: center;
+    /* centrado verticalmente */
+    height: 48px;
+    background-color: rgba(206, 206, 206, 0.385);
+    /*background-color: rgba(206, 206, 206, 0.385);*/
+    box-shadow: 0px 1px 2px 0px #20212447;
+}
+
+
+footer .México{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 2%;
+    padding: 0;
+    color: #6c6c6c;
+}
+
+
+footer .pie-de-pagina2{
+    margin-top: 0%;
+    width: 100%;
+    display: flex;
+    /*Propiedad flex- sea responsivo y flexible, que se pueda mover para todos lados*/}
+
+
+
+footer nav {
+    /* Justificar a la derecha*/
+    /*background-color: blue;*/
+    /*color*/
+    display: flex;
+    justify-content: flex-start;
+    /*justificar a la derecha*/
+    background-color: rgba(206, 206, 206, 0.385);
+    width: 100%;
+    height: 48px;
+}
+
+
+
+
+
+footer nav .foo-navegation-left{
+    width: 30px;
+    list-style: none;
+    /*Elimina los puntos de la lista*/
+    display: flex;
+    /*Propiedad flex- sea responsivo y flexible, que se pueda mover para todos lados*/
+    justify-content: center;
+    align-items: left;
+    /* centrado verticalmente */
+    height: auto;
+}
+
+footer nav .foo-navegation-right{
+    width: 30px;
+    list-style: none;
+    /*Elimina los puntos de la lista*/
+    display: flex;
+    /*Propiedad flex- sea responsivo y flexible, que se pueda mover para todos lados*/
+    justify-content: center;
+    align-items: right;
+    /* centrado verticalmente */
+    height: auto;
+
+}
+
+footer nav .fg{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: 3.5%;
+    padding: 0;
+    margin-top: 2.5%;
+    text-decoration: none;
+    border: 5%;
+}
+    
+footer nav .fg a{
+    color: #6c6c6c;
+}
+
+footer nav .publicidad{
+    border: 5%;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 0;
+    color: #505050;
+    margin-top: 2.5%;
+    text-decoration: none;
+}
+
+footer nav .publicidad a{
+    color: #6c6c6c;
+}
+
+footer nav .negocios{
+    border: 5%;
+    margin-right: 3%;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 2.5%;
+    text-decoration: none;
+}
+
+footer nav .negocios a{
+    color: #6c6c6c;
+}
+
+footer nav .comofunciona{
+    border: 5%;
+    margin-right: 3%;
+    margin-left: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 2.5%;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+footer nav .comofunciona a{
+    color: #6c6c6c;
+}
+
+footer nav .privacidad{
+    border: 5%;
+    margin-left: 55%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 2.5%;
+    text-decoration: none;
+}
+
+footer nav .privacidad a{
+    color: #6c6c6c;
+}
+
+footer nav .condiciones{
+    border: 5%;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 2.5%;
+    text-decoration: none;
+}
+
+footer nav .condiciones a{
+    color: #6c6c6c;
+}
+
+footer nav .preferencias{
+    border: 5%;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 2.5%;
+
+}
+
+footer nav .preferencias a{
+    color: #6c6c6c;
+}
+a:hover{
+    text-decoration: underline;
+}
